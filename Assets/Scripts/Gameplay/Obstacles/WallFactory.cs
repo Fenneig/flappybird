@@ -8,14 +8,14 @@ namespace Flappybird.Gameplay.Obstacles
     {
         [SerializeField] private float _rangeBetweenSpawns;
         [SerializeField] private Wall _wallPrefab;
-        private DifficultSettings Difficult => GameSession.Instance.Difficult;
+        
         private float _timeBetweenSpawns;
         private bool _isPlaying;
 
         private void Start()
         {
             _isPlaying = true;
-            _timeBetweenSpawns = _rangeBetweenSpawns / Difficult.WallSpeed;
+            _timeBetweenSpawns = _rangeBetweenSpawns / Difficult.Current.WallSpeed;
             StartCoroutine(SpawnWall());
         }
 
@@ -24,7 +24,7 @@ namespace Flappybird.Gameplay.Obstacles
             while (_isPlaying)
             {
                 var wall = Instantiate(_wallPrefab, transform.position, Quaternion.identity);
-                wall.Init(Difficult);
+                wall.Init();
 
                 yield return new WaitForSeconds(_timeBetweenSpawns);
             }

@@ -1,21 +1,34 @@
-﻿using UnityEngine;
+﻿using Flappybird.Model.Data.Properties;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Flappybird.Model
 {
     public class GameSession : MonoBehaviour
     {
-        [SerializeField] private DifficultSettings _defaultDifficult; 
-        
+        [SerializeField] private DifficultSettings _defaultSettings;
+            
         public static GameSession Instance;
 
-        public DifficultSettings Difficult { get; set; }
+        public IntProperty Score { get; set; }
 
         private void Awake()
         {
             Instance = this;
             DontDestroyOnLoad(this);
+            InitModels();
+            LoadHud();
+        }
 
-            Difficult = _defaultDifficult;
+        private void InitModels()
+        {
+            if (_defaultSettings != null) Difficult.Current = _defaultSettings;
+            Score = new IntProperty();
+        }
+
+        private void LoadHud()
+        {
+            SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
         }
     }
 }

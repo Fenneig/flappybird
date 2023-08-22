@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d7203e30be416eb2aaf42b94a95040, type: 3}
   m_Name: Easy
   m_EditorClassIdentifier: 
-  _wallGapSize: 2
+  _wallGapSize: 2.08
   _wallSpeed: 3

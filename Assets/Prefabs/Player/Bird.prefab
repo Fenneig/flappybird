@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2880270499134533352}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 7259260240475182327}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2880270499134533352
 MonoBehaviour:
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpSpeed: 10
-  _maxJumpVelocity: 5
+  _maxJumpVelocity: 6.5
   _rigidbody: {fileID: 1772386706670604819}
 --- !u!1 &7077167820740340953
 GameObject:
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 6239417261291764964}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &6239417261291764964
 CircleCollider2D:
   m_ObjectHideFlags: 0
