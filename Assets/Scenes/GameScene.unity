@@ -473,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 1603028407410967384, guid: 6a08fa60dcd3db54c8104bf9ab45d85d, type: 3}
       propertyPath: _defaultSettings
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d14352ab8281dd4408bccabe93397285, type: 2}
     - target: {fileID: 2142471069922921059, guid: 6a08fa60dcd3db54c8104bf9ab45d85d, type: 3}
       propertyPath: m_Name
       value: GameSession
