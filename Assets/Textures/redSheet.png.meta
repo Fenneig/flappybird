@@ -240,6 +240,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: redSheet_exit
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 184
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc890623437c28144aba2b2b95ded453
+      internalID: 455148550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -255,6 +276,7 @@ TextureImporter:
       redSheet_Panel: -279570629
       redSheet_Window: -1068858039
       redSheet_button: 2128390907
+      redSheet_exit: 455148550
       redSheet_slider_left: 1924148940
       redSheet_slider_right: 239371928
   mipmapLimitGroupName: 
