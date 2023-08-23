@@ -317,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184511541253873976}
   - component: {fileID: 8933804362156228673}
+  - component: {fileID: 1926469371320835925}
   m_Layer: 0
   m_Name: TopWall
   m_TagString: Untagged
@@ -386,6 +387,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.739212, y: 9.835347}
   m_EdgeRadius: 0
+--- !u!114 &1926469371320835925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2772163555236789780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1788d57792c74851889a846818a98c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4750992908883283096
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2697473034153772550}
   - component: {fileID: 630595909535135162}
+  - component: {fileID: 3799687536648822574}
   m_Layer: 0
   m_Name: BotWall
   m_TagString: Untagged
@@ -549,6 +563,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7683058, y: 9.863163}
   m_EdgeRadius: 0
+--- !u!114 &3799687536648822574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632908832153018611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1788d57792c74851889a846818a98c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6945751769318583692
 GameObject:
   m_ObjectHideFlags: 0
