@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Flappybird.Audio;
+using UnityEngine;
 
 namespace Flappybird.Gameplay.Player
 {
@@ -9,6 +10,9 @@ namespace Flappybird.Gameplay.Player
         [SerializeField] private float _maxJumpVelocity;
         [Space, Header("Components")]
         [SerializeField] private Rigidbody2D _rigidbody;
+        [SerializeField] private PlaySoundsComponent _soundsComponent;
+        [Space, Header("String constants")]
+        [SerializeField] private string _flapSoundId;
 
         private void Update()
         {
@@ -32,6 +36,7 @@ namespace Flappybird.Gameplay.Player
         private void Jump()
         {
             _rigidbody.AddForce(Vector2.up * _jumpSpeed, ForceMode2D.Impulse);
+            _soundsComponent.Play(_flapSoundId);
             
             if (_rigidbody.velocity.y > _maxJumpVelocity) _rigidbody.velocity = new Vector2(0, _maxJumpVelocity);
         }
