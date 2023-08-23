@@ -1,4 +1,6 @@
-﻿using Flappybird.Model;
+﻿using System;
+using Flappybird.Audio;
+using Flappybird.Model;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,9 +8,13 @@ namespace Flappybird.Gameplay.Obstacles
 {
     public class Wall : MonoBehaviour
     {
+        [Header("Sound settings")]
+        [SerializeField] private PlaySoundsComponent _soundComponent;
+        [SerializeField] private string _soundId;
+        [Space,Header("Game objects")]
         [SerializeField] private GameObject _topWall;
         [SerializeField] private GameObject _botWall;
-        
+
         private float _speed;
         private float _gapAppearRange;
 
@@ -33,6 +39,7 @@ namespace Flappybird.Gameplay.Obstacles
             if (other.CompareTag("Player"))
             {
                 GameSession.Instance.Score.Value++;
+                _soundComponent.Play(_soundId);
             }
         }
     }
