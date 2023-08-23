@@ -766,6 +766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 5288267067730575139, guid: 713852628f8a67f448d811cbe427e38b, type: 3}
+      propertyPath: _data.Array.data[0]._clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a3b0186e6d405ab4ab8dced237a4a700, type: 3}
     - target: {fileID: 8124761391821549089, guid: 713852628f8a67f448d811cbe427e38b, type: 3}
       propertyPath: m_RootOrder
       value: -1
