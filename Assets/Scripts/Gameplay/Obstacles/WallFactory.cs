@@ -15,10 +15,8 @@ namespace Flappybird.Gameplay.Obstacles
 
         private void Start()
         {
-            _isPlaying = true;
             _timeBetweenSpawns = _rangeBetweenSpawns / Difficult.Current.WallSpeed;
             GameSession.Instance.PauseService.Register(this);
-            StartCoroutine(SpawnWall());
         }
 
         private void OnDestroy()

@@ -24,6 +24,7 @@ namespace Flappybird.Gameplay.Player
         private void Start()
         {
             GameSession.Instance.PauseService.Register(this);
+            _rigidbody.simulated = false;
         }
 
         private void Update()
@@ -72,6 +73,8 @@ namespace Flappybird.Gameplay.Player
         public void SetPause(bool isPaused)
         {
             _isPaused = isPaused;
+            
+            if (!_isPaused) _rigidbody.simulated = true;
         }
     }
 }
