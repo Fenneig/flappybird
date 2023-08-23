@@ -12,7 +12,7 @@ namespace Flappybird.HUD
 
         private void Update()
         {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || PLATFORM_STANDALONE
             if (Input.GetMouseButtonDown(0)) StartGame();
 #elif PLATFORM_ANDROID
             if (Input.touchCount > 0)

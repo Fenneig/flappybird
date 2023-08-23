@@ -30,9 +30,8 @@ namespace Flappybird.Gameplay.Player
         private void Update()
         {
             if (_isPaused) return;
-#if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0))
-                Jump();
+#if UNITY_EDITOR || PLATFORM_STANDALONE
+            if (Input.GetMouseButtonDown(0)) Jump();
 #elif PLATFORM_ANDROID
             if (Input.touchCount > 0)
             {
